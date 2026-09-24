@@ -36,5 +36,5 @@ But... something seems wrong.
 
 **Built with:** C++, raylib, raymedia, FFmpeg
 
-[View Repository →](Pong!!/README.md)
+[View Repository →](Pong!!)
 ```
