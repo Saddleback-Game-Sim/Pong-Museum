@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(RaylibTemplate LANGUAGES C CXX)
+project(RaylibPong LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -144,18 +144,18 @@ else()
     target_link_libraries(raylib_media PRIVATE PkgConfig::FFMPEG)
 endif()
 
-add_executable(RaylibTemplate main.cpp)
+add_executable(RaylibPong main.cpp)
 
-target_link_libraries(RaylibTemplate PRIVATE raylib_media)
+target_link_libraries(RaylibPong PRIVATE raylib_media)
 
 # An always-run resource target also picks up video changes without relinking.
 add_custom_target(pong_resources ALL
-    COMMAND "${CMAKE_COMMAND}" -E make_directory "$<TARGET_FILE_DIR:RaylibTemplate>/res"
+    COMMAND "${CMAKE_COMMAND}" -E make_directory "$<TARGET_FILE_DIR:RaylibPong>/res"
     COMMAND "${CMAKE_COMMAND}" -E copy_if_different
-        "${CMAKE_CURRENT_SOURCE_DIR}/res/test.mp4" "$<TARGET_FILE_DIR:RaylibTemplate>/res/test.mp4"
+        "${CMAKE_CURRENT_SOURCE_DIR}/res/Bad_Apple.mp4" "$<TARGET_FILE_DIR:RaylibPong>/res/Bad_Apple.mp4"
     VERBATIM
 )
-add_dependencies(RaylibTemplate pong_resources)
+add_dependencies(RaylibPong pong_resources)
 
 if(WIN32)
     if(MINGW)
@@ -173,13 +173,13 @@ if(WIN32)
             list(APPEND FFMPEG_RUNTIME_FILES "${runtime_path}")
         endforeach()
     endif()
-    add_custom_command(TARGET RaylibTemplate POST_BUILD
+    add_custom_command(TARGET RaylibPong POST_BUILD
         COMMAND "${CMAKE_COMMAND}" -E copy_if_different
             "${RAYLIB_RUNTIME_FILE}"
-            "$<TARGET_FILE_DIR:RaylibTemplate>"
+            "$<TARGET_FILE_DIR:RaylibPong>"
         COMMAND "${CMAKE_COMMAND}" -E copy_if_different
             ${FFMPEG_RUNTIME_FILES}
-            "$<TARGET_FILE_DIR:RaylibTemplate>"
+            "$<TARGET_FILE_DIR:RaylibPong>"
         VERBATIM
     )
 endif()
