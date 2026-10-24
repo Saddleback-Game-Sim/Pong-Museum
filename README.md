@@ -24,6 +24,35 @@ The original club Pong project can be found here:  [Pong](https://github.com/Sad
 
 ## Gallery
 
+
+### Pong Puls Puls
+
+[![pong++](res/pong++.png)](pong++)
+
+**By:** [Giaren Portera](https://github.com/theboringspace)
+
+A Pong game made from the ground up (the ground is raylib). ++ for adding wild, crazy, and insane features.
+
+
+[View Repository →](https://github.com/theboringspace/Pong_Plus_Plus)
+
+---
+
+### ???
+
+[![Pong](res/pong2.png)](Pong)
+
+**By:** [???]
+
+A Pong game, or maybe not
+
+**Built with:** C++, raylib
+
+[View Repository →](Not now)
+
+---
+
+
 ### Pong!!...??
 
 [![Pong!!](res/Akil-Pong!!.png)](Pong!!)
@@ -37,4 +66,5 @@ But... something seems wrong.
 **Built with:** C++, raylib, raymedia, FFmpeg
 
 [View Repository →](Pong!!)
-```
+
+---
