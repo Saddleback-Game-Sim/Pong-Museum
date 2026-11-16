@@ -38,13 +38,42 @@ A Pong game made from the ground up (the ground is raylib). ++ for adding wild, 
 
 ---
 
-### ???
+### Its Pong!
+
+[![Pong](res/pong.png)](Pong)
+
+**By:** [Zachary Ollivierre](https://github.com/ZacharyOllivierre)
+
+Its Pong!
+Arcade Cabinet Visuals
+
+**Built with:** C++, raylib
+
+[View Repository →](https://github.com/ZacharyOllivierre/RaylibGames)
+
+---
+
+### Pong!
 
 [![Pong](res/pong2.png)](Pong)
 
 **By:** [???]
 
 A Pong game, or maybe not
+
+**Built with:** C++, raylib
+
+[View Repository →](Not now)
+
+---
+
+### Pong?
+
+[![Pong](res/pong3.png)](Pong)
+
+**By:** [???]
+
+That is a Pong game
 
 **Built with:** C++, raylib
 
